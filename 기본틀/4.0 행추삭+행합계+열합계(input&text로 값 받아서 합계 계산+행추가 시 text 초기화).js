@@ -1,3 +1,4 @@
+/* ------------------------------------------ PlusMinusRow.js Start ------------------------------------------ */
 var PlusMinusRow = function (options) {
   // 사용자가 정의하지 않은 일부 옵션 변수의 기본값
   var defaults = {
@@ -277,6 +278,7 @@ var PlusMinusRow = function (options) {
     }
   }
 };
+/* ------------------------------------------ PlusMinusRow.js End ------------------------------------------ */
 
 
 var Integration = Backbone.View.extend({

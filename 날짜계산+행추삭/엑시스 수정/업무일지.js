@@ -362,11 +362,8 @@ var Integration = Backbone.View.extend({
       minusBtnId: "minus1",
       copyRowClass: "copyRow1",
       copyRowNoClass: "copyRowNo1",
-      // 행 추가/삭제 후 합계 재계산
-      // plusRowCallback: function () { recalcAll(); },
-      // minusRowCallback: function () { recalcAll(); }
-      plusRowCallback: function () { },
-      minusRowCallback: function () {}
+      plusRowCallback: function () {},
+      minusRowCallback: function () {self.calSumTime();}
     });
     
     $(".startTime [data-select-type='hour'], \

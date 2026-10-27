@@ -1,12 +1,15 @@
 
     autoSubject : function() {
-  		$('.sign_type1_inline').each(function (index2, item) {
-  			$(item).find('.sign_member').each(function (index, item) {
+        // 결재선 가져오기
+        $('.sign_type1_inline').each(function (index2, item) {
+            $(item).find('.sign_member').each(function (index, item) {
                   var sign_name = $(item).find('.sign_name').text();  // 기안자
                   var sign_rank = $(item).find('.sign_rank').text();  // 직급
-                  var draftDept = $('#draftDept').val();  // 기안부서
-                  
-                  $('#subject').val("[" + draftDept + "] 휴가신청서_" + sign_name + " (잔여 연차)");
-  			});
-  		});
+            });
+        });
+
+        var draftDept = $('#draftDept').val();  // 기안부서
+        var draftUser = $('#draftUser').val();  // 기안자
+      
+        $('#subject').val("[" + draftDept + "] 휴가신청서_" + draftUser + " (잔여 연차)");
     },

@@ -8,6 +8,7 @@
             });
         });
 
+        // 문서정보 가져오기
         var draftDept = $('#draftDept').val();  // 기안부서
         var draftUser = $('#draftUser').val();  // 기안자
       
